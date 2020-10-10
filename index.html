@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carousel</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="carousel">
+        <button class="carousel_button carousel_button--left">
+          <img src="r.png" background="transparent" />
+        </button>
+        <div class="carousel_container">
+          <ul class="carousel_tracker">
+            <li class="carousel_slide current-slide">
+              <img src="image_1.jpg" />
+            </li>
+            <li class="carousel_slide"><img src="image_2.jpg" /></li>
+            <li class="carousel_slide"><img src="image_3.jpg" /></li>
+            <li class="carousel_slide"><img src="image_4.jpg" /></li>
+            <li class="carousel_slide"><img src="image_5.jpg" /></li>
+            <li class="carousel_slide"><img src="image_6.jpg" /></li>
+            <li class="carousel_slide"><img src="image_7.jpg" /></li>
+            <li class="carousel_slide"><img src="image_8.jpg" /></li>
+          </ul>
+        </div>
+        <div class="carousel_nav">
+          <button class="carousel_indicator current-slide"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+          <button class="carousel_indicator"></button>
+        </div>
+        <button class="carousel_button carousel_button--right">
+          <img src="r.png" height="24" width="24" />
+        </button>
+      </div>
+    </div>
+    <script src="carousel.js"></script>
+  </body>
+</html>

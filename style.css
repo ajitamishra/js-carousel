@@ -1,0 +1,70 @@
+.carousel {
+  position: relative;
+  width: 65%;
+  height: 550px;
+  margin: 0 auto;
+}
+.carousel_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel_container {
+  position: relative;
+
+  padding: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel_tracker {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+.carousel_slide {
+  position: absolute;
+}
+.carousel_button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.carousel_button img {
+  width: 25px;
+}
+
+.carousel_button--left {
+  left: -40px;
+}
+.carousel_button--right {
+  right: -40px;
+}
+.carousel_nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.carousel_indicator {
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0 12px;
+  cursor: pointer;
+}
+.carousel_indicator.current-slide {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden {
+  display: none;
+}
